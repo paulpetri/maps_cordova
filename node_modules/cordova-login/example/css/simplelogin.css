@@ -1,0 +1,13 @@
+html,body{width:100%;height:100%;margin:0;padding:0;background:var(--bodyBGcolor);color:var(--bodyTXcolor);}
+#login-logo{width:100%;height:20%;overflow:hidden;text-align:center;padding-top:20%}
+#login-logo img{height:100%;max-width:100%;}
+#back{width:80px;height:80px;color:var(--bodyBGcolor);background:var(--bodyTXcolor);border-radius:10px;position:fixed;top:1%;right:1%;font-size:430%;text-align:center;font-weight:bold}
+input{width:100%;height:80px;margin-bottom:20px;color:var(--bodyBGcolor);background:var(--bodyTXcolor);font-size:250%;font-weight:bold;border-radius:10px;}
+input[type=text],input[type=password]{padding-left:5%;width:95%;background:var(--bodyBGcolor);color:var(--bodyTXcolor);border:1px solid var(--bodyTXcolor);}
+input::-webkit-input-placeholder {color: var(--bodyTXcolor)!important;}
+a{text-decoration:none;color:inherit;}
+#WaitIcon{width:100%;height:100%;text-align:center;background:url('../images/trans.png');position:fixed;top:0;left:0;}
+#WaitIcon img{width:30%;margin-top:65%;}
+.login-msg{width:97%;height:auto;padding:10px 10px;margin-bottom:20px;color:var(--bodyBGcolor);background:var(--bodyTXcolor);font-size:250%;}
+.login-form{width:60%;margin:20%;text-align:center;}
+.hidden{display:none;}
