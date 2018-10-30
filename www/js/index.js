@@ -12,13 +12,6 @@ function onDeviceReady() {
     makeBasicMap();
     getCurrentlocation();
 
-
-    if (localStorage.authtoken) {
-        $.mobile.navigate("#map-page");
-    } else {
-        $.mobile.navigate("#login-page");
-    }
-
 }
 
 function makeBasicMap() {

@@ -44,7 +44,9 @@
 
 
 <div data-role="page" style="background-color: white" id="map-page">
-    <div id="map-var" style="width: 100%; height: 100%;"></div>
+    <div id="map-var" style="width: 100%; height: 100%;">
+        {% leaflet_map "my_map" callback="map_init" %}
+    </div>
 </div>
 
 
