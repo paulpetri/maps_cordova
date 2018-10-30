@@ -12,6 +12,13 @@ function onDeviceReady() {
     makeBasicMap();
     getCurrentlocation();
 
+
+    if (localStorage.authtoken) {
+        $.mobile.navigate("#map-page");
+    } else {
+        $.mobile.navigate("#login-page");
+    }
+
 }
 
 function makeBasicMap() {
@@ -37,7 +44,11 @@ function getCurrentlocation() {
     console.log("In getCurrentlocation.");
     navigator.geolocation.getCurrentPosition(
         function (pos) {
+            myLatLon = L.latLng(pos.coords.latitude, pos.coords.longitude);
+            myPos = new myGeoPosition(pos);
+            localStorage.lastKnownCurrentPosition = JSON.stringify(myPos);
             console.log("Got location");
+
             setMapToCurrentLocation(pos);
         },
         function (err) {

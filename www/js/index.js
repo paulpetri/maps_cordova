@@ -12,6 +12,13 @@ function onDeviceReady() {
     makeBasicMap();
     getCurrentlocation();
 
+
+    if (localStorage.authtoken) {
+        $.mobile.navigate("#map-page");
+    } else {
+        $.mobile.navigate("#login-page");
+    }
+
 }
 
 function makeBasicMap() {
@@ -88,5 +95,6 @@ function onLoginPressed() {
         message += "Status: " + xhr.status + " " + xhr.responseText;
         showOkAlert(message);
         console.log("FAILED!!!.");
+
     });
 }

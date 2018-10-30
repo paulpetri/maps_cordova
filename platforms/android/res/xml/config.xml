@@ -29,5 +29,6 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <allow-intent href="market:*" />
+    <allow-navigation href="*" />
     <preference name="loglevel" value="DEBUG" />
 </widget>
